@@ -270,5 +270,8 @@ popular requests for tests of "popularity" mode.
 
 </ul>
 
+</td>
+</table>
+
 </body>
 </html>
