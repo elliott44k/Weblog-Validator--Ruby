@@ -1,11 +1,8 @@
-# Weblog-Validator
+<!--#include virtual="header.html" -->
 
 <body>
 
-<h1 class="title">Project 1 - Processing Weblog Files</h1>
-<center>
-Due 11:59pm Wed, Sep 25th, 2013<br>
-</center>
+<h1 class="title">Processing Weblog Files</h1>
 
 <p>
 
@@ -44,37 +41,6 @@ we might want to know which web pages are the most popular on our web
 site, or what time of day our web server gets the most hits.  In this
 project, you will write a Ruby program that parses web logs of the
 form shown above and reports various summary information.
-
-<h2>Getting Started</h2>
-
-Download the following zip archive <a href="p1.zip">p1.zip</a>.  It should include 
-the following files:
-<ul>
-<li>Your Ruby program - <a href="weblog.rb">weblog.rb</a>
-<li>Test inputs (sample log files)
-<ul>
-<li><a href="public_validate.in">public_validate.in</a>
-<li><a href="public_bytes.in">public_bytes.in</a>
-<li><a href="public_time.in">public_time.in</a>
-<li><a href="public_popularity.in">public_popularity.in</a>
-<li><a href="public_requests.in">public_requests.in</a>
-</ul>
-<li>Test outputs (weblog.rb output)
-<ul>
-<li><a href="public_validate.out">public_validate.out</a>
-<li><a href="public_bytes.out">public_bytes.out</a>
-<li><a href="public_time.out">public_time.out</a>
-<li><a href="public_popularity.out">public_popularity.out</a>
-<li><a href="public_requests.out">public_requests.out</a>
-</ul>
-<li>Submission scripts
-<ul>
-<li> <a href="submit.jar">submit.jar</a>
-<li> <a href=".submit">.submit</a> (Your OS may prevent you from seeing this file because it believes it is a system file)
-<li> <a href="submit.rb">submit.rb</a>
-</ul>
-</ul>
-<p>
 
 <h2>Part 1:  Validating log files</h2>
 
@@ -303,151 +269,6 @@ in project 1 testing, there will be no ties among the top 10 most
 popular requests for tests of "popularity" mode.
 
 </ul>
-
-<h2>Submission</h2>
-
-You can submit your project in two ways:
-
-<ul>
-<li>
-Submit your weblog.rb file directly to the 
-<a href="http://submit.cs.umd.edu">submit server</a> 
-by clicking on the submit link in the column "web submission".
-
-<p>
-<img src="submit1.jpg">
-<p>
-
-Next, use the submit dialog to submit your weblog.rb file directly.
-
-<p>
-<img src="submit2.jpg">
-<p>
-
-Select your file using the "Browse" button, 
-then press the "Submit project!" button.  
-You <b>do not</b> need to put it in a Jar or Zip file.
-
-<p>
-
-<li>
-Submit directly by executing a Java program on a computer
-with Java and network access.  Included in p1.zip 
-are the following files:
-
-<p>
-<ul>
-<li> <a href="submit.jar">submit.jar</a>
-<li> <a href=".submit">.submit</a> (Your OS may prevent you from seeing this file because it believes it is a system file)
-<li> <a href="submit.rb">submit.rb</a>
-</ul>
-<p>
-
-The files should be in the directory containing your project. 
-From there you can either execute submit.rb, or type the 
-following command directly:
-
-<center>
-<tt>
-java -jar submit.jar
-</tt>
-</center>
-<p>
-
-The first time you submit this way
-you will be asked to enter your linuxlab class account and password. 
-All files in the directory (and its subdirectories) will then be
-put in a jar file and submitted to the submit server.  
-If your submission is successful you will see the message:
-<p> 
-
-<center>
-<tt>
-Successful submission #<submission_number> received for project 1
-</tt>
-</center>
-<p>
-
-</ul>
-
-<h2>Hints and Tips</h2>
-
-<ul>
-<li>This project is not hard, but could consume
-a lot of time because you will probably be
-writing in Ruby for the first time. 
-So be sure to start early so you'll have opportunities
-to ask questions on Piazza or 
-come to office hours if you get stuck.
-
-<li>
-Follow good program development practices:  Test each part of your
-program as you develop it.  Start developing a simplified solution and
-then add features as you are sure that earlier parts work.  Test early
-and often, and re-run your tests as you add new features to be sure
-you didn't break anything.
-
-<li>
-Before you get too far, review the Ruby class reference, and look for
-classes and methods that might be helpful.  For example, the Array and
-Hash classes will come in handy.  Finding the right class might save
-you a lot of time and make your program easier to develop.
-
-<li>
-If you write methods that should return a true or false value,
-remember that a Ruby 0 is not false.
-
-<li>
-Ruby has an integrated debugger, which can be invoked by running Ruby
-with the -rdebug option.  The debugger's <tt>p</tt> command may be
-helpful for viewing the values of variables and data structures.  The
-<tt>var local</tt> command prints all of the local variables at the
-current point of exclusion.  The chapter "When Trouble Strikes" of The
-Pragmatic Programmer's Guide discusses the debugger in more detail.
-
-<li>
-To thoroughly debug your program, you will need to
-construct test cases of your own, based on the project description. If
-you need help with this, please come to TA office hours.
-
-<li>
-Remember to save your work frequently---a power failure, network
-failure, or problem with a phone connection could cost many hours of
-lost work.  For the same reason, submit your project often.  You can
-retrieve previously-submitted versions of your program from the submit
-server should disaster strike.
-
-<li>
-Be sure you have read and understand the project grading policies in
-the course syllabus.  Do this well in advance of the project due date.
-</ul>
-
-<h2>Academic Integrity</h2>
-
-<p>
-The Campus Senate has adopted a policy asking students to include the
-following statement on each assignment in every course: "I pledge on
-my honor that I have not given or received any unauthorized assistance
-on this assignment."  Consequently your program is requested to
-contain this pledge in a comment near the top.
-
-<p>
-Please <b>carefully read</b> the academic honesty section of the
-course syllabus.  <b>Any evidence</b> of impermissible cooperation on
-projects, use of disallowed materials or resources, or unauthorized
-use of computer accounts, <b>will be submitted</b> to the Student
-Honor Council, which could result in an XF for the course, or
-suspension or expulsion from the University.  Be sure you understand
-what you are and what you are not permitted to do in regards to
-academic integrity when it comes to project assignments.  These
-policies apply to all students, and the Student Honor Council does not
-consider lack of knowledge of the policies to be a defense for
-violating them.  Full information is found in the course
-syllabus---please review it at this time.
-
-
-</td>
-</table>
 
 </body>
 </html>
